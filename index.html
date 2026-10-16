@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b12">
+  <meta name="description" content="Pilih menu. Mental siap?">
+  <title>loco kowe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Ruang loco beranda"><span class="brand-mark">R.</span><span>PANGGON<span class="brand-muted">INTROPEKSI</span><sup>™</sup></span></a>
+    <div class="top-meta"><span class="live-dot"></span> SATIRE MODE <span class="meta-divider">/</span> <span id="clock">00:00:00</span></div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow reveal"><span class="eyebrow-line"></span> TEMPAT MBLEDOS YANG AGAK SKIBIDI</div>
+      <h1 class="reveal">Pilihen su.<br><span class="headline-accent">Siapno linggismu.</span><span class="headline-star" aria-hidden="true">✳</span></h1>
+      <p class="hero-copy reveal">Santai, iki mek website. Nek kroso nyindir, mungkin algoritmane <em>terlalu ngewe.</em> 🫵</p>
+      <div class="hero-stats reveal"><span><strong>03</strong> PILIHAN</span><span class="stat-sep"></span><span><strong>∞</strong> ALASAN BUAT LOCO</span></div>
+    </section>
+
+    <section class="menu-section" aria-labelledby="menu-title">
+      <div class="section-heading reveal"><div><span class="mini-label">01 / SELECT YOUR DAMAGE</span><h2 id="menu-title">PILIHEN MBOET</h2></div><span class="heading-note">PILIH SAMBIL LOCO</span></div>
+      <div class="choice-grid">
+        <button class="choice-card card-one reveal" data-choice="i" type="button">
+          <span class="card-index">01</span><span class="card-icon" aria-hidden="true">🧠</span>
+          <span class="card-content"><span class="card-kicker">I</span><span class="card-title">Katanya bisa<br>baca situasi.</span><span class="card-description">Tapi hati aja masih sering tersakiti.</span></span>
+          <span class="card-footer"><span>BUKAK</span><span class="arrow">↗</span></span>
+        </button>
+        <button class="choice-card card-two reveal" data-choice="o" type="button">
+          <span class="card-index">02</span><span class="card-icon" aria-hidden="true">🎭</span>
+          <span class="card-content"><span class="card-kicker">OL</span><span class="card-title">Si paling<br>tersakiti.</span><span class="card-description">Pemeran utama, korban keadaan, langganan harapan.</span></span>
+          <span class="card-footer"><span>BUKAK</span><span class="arrow">↗</span></span>
+        </button>
+        <button class="choice-card card-three reveal" data-choice="l" type="button">
+          <span class="card-index">03</span><span class="card-icon" aria-hidden="true">💌</span>
+          <span class="card-content"><span class="card-kicker">J</span><span class="card-title">Jago bilang,<br>minim tindakan.</span><span class="card-description">Katanya kangen. Chat aja kalah sama notifi promo.</span></span>
+          <span class="card-footer"><span>BUKAK</span><span class="arrow">↗</span></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="console hidden" id="console" aria-live="polite">
+      <div class="console-top"><span><span class="live-dot"></span> HASIL PEMERIKSAAN</span><span id="resultIndex">CASE_001</span></div>
+      <div class="console-body"><div class="console-stamp">DIAGNOSIS<br><span>UNFILTERED</span></div><div id="output" class="output"></div><div class="typing-cursor" aria-hidden="true"></div></div>
+      <div class="console-bottom"><span>DISCLAIMER: KALAU TERSINGGUNG, NGOCOK SEK.</span><button id="skipBtn" type="button">SKIP ANIMASI ↗</button></div>
+    </section>
+
+    <section class="again hidden" id="again">
+      <p class="again-label">SELESAI DIROAST? BELUM TENTU SADAR.</p>
+      <button class="again-button" id="againBtn" type="button">Pilih topik lain <span>↻</span></button>
+      <p class="soft-note">Pencet nek arp jajal maneh</p>
+    </section>
+
+    
+    <section class="closing-note hidden" id="closingNote" aria-live="polite">
+    <div class="closing-mark">♥</div>
+
+    <p class="closing-kicker">SEKIAN DARI KENTMUST86</p>
+
+    <p class="closing-message">
+        Matursuwun wes mampir neng websitku
+        <strong>(kentmust86)</strong>, tenang bro iki maeng
+        mek sindiran, santai awakdewe ijek due gusti allah.. 🤍
+    </p>
+
+    <span class="closing-signature">
+        — KENTMUST86 / END OF ROAST
+    </span>
+    </section>
+
+    <section class="terminal-prompt reveal" id="terminalPrompt">
+      <span class="prompt-symbol">↳</span><span id="promptText">Sistem menunggu keputusanmu...</span><span class="prompt-blink">_</span>
+    </section>
+  </main>
+
+  <footer class="footer"><span>© 2026 HAHA HIHI™</span><span>DIBUAT DENGAN SEDIKIT EMPATI & BANYAK KELUAR.</span><button id="musicToggle" class="music-toggle" type="button" aria-pressed="false"><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="musicLabel">MUSIC OFF</span></button></footer>
+
+  <audio id="backgroundMusic" loop>
+  <source src="backsound.mp3" type="audio/mpeg">
+</audio>
+  <script src="main.js"></script>
+</body>
+</html>
