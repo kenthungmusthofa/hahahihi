@@ -87,7 +87,7 @@ async function showLines(choice) {
         break;
       }
       node.textContent += char;
-      await sleep(19);
+      await sleep(100);
     }
     await sleep(skipRequested ? 0 : 280);
   }
